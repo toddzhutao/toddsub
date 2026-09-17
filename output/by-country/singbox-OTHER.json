@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.98.0",
+      "server": "104.16.72.2",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -25,7 +25,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.19.229.21",
+      "server": "104.16.72.2",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -35,7 +35,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "//assignment",
+        "path": "/assignment",
         "headers": {
           "Host": "www.calmlunch.com"
         }
@@ -44,7 +44,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 03 - xiaohe",
-      "server": "104.19.229.21",
+      "server": "104.16.72.41",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -54,7 +54,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "//assignment",
+        "path": "/assignment",
         "headers": {
           "Host": "www.calmlunch.com"
         }
