@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 104.25.217.189
-  port: 443
+  server: 109.107.155.76
+  port: 2053
   udp: true
   type: vless
-  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: imzajnekupas.a3-60-morteza.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
+    path: /tv/member/auth?ed=2560fp=chrome
     headers:
-      Host: imzajnekupas.a3-60-morteza.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select

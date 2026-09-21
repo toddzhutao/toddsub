@@ -6,23 +6,23 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "104.25.217.189",
-      "server_port": 443,
-      "uuid": "7a657573-627d-c5d7-4e7b-9e260f5cfff1",
+      "server": "109.107.155.76",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "imzajnekupas.a3-60-morteza.workers.dev",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/9e260f5cfff1/loc-0",
+        "path": "/tv/member/auth?ed=2560fp=chrome",
         "headers": {
-          "Host": "imzajnekupas.a3-60-morteza.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
