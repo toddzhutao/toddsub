@@ -4,26 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 185.126.238.87
-  port: 2083
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  server: 192.145.31.5
+  port: 443
   udp: true
   type: vless
-  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
-  network: grpc
-  grpc-opts:
-    grpc-service-name: security.debian.org
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
 rules:
 - MATCH,PROXIES
