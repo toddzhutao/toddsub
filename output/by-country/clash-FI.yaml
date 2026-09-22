@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 87.58.148.70
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 152.233.54.104
   port: 443
   udp: true
@@ -22,10 +15,23 @@ proxies:
     public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
     short-id: 0a30e2aee95a7571
   servername: fi1.cache-4d8a.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 95.217.24.119
+  port: 2087
+  udp: true
+  type: vless
+  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
+    short-id: e9fae729e40ae07e
+  servername: 62.238.103.54
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 95.216.27.15
   port: 2053
@@ -39,18 +45,48 @@ proxies:
   servername: www.google.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 95.217.24.119
-  port: 2087
+  server: 77.110.117.199
+  port: 9443
   udp: true
   type: vless
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  flow: xtls-rprx-vision
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  servername: 62.238.103.54
-  client-fingerprint: chrome
+  servername: hub-fi-01.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fi01-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  tls: true
+  servername: global.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 202.166.187.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  tls: true
+  servername: f.yoptybla.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +96,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +107,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
