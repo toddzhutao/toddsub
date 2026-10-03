@@ -5,16 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "cdn.zoom.us",
-      "server_port": 80,
-      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "argo6.5671234.xyz",
+      "server_port": 443,
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "argo6.5671234.xyz",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cloud.ghostdev.lk"
-        }
+        "path": "/e8e2cecb6188f7fb"
       }
     },
     {
@@ -22,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
