@@ -10,14 +10,14 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 5koepr9k4rjabc1z
+  password: f8asl798zconw8rx
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: ae410052-tmm5c0-tsdg75-tlhh.nw4.hyhuawei.com
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
-  sni: ae410052-tmm5c0-tsdg75-tlhh.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
@@ -25,7 +25,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 202.146.222.29
@@ -33,39 +33,44 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/wangcai2рҹү
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 202.146.222.174
+  server: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: strong-haddock.rooster465.autos
+  server: jumpernode.site
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
+  type: vless
+  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: p-nt-www-amazon-com-kalias.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   server: mz.hkychina.com
   port: 8443
   udp: true
   type: hysteria2
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   server: 194.99.79.26
@@ -82,6 +87,18 @@ proxies:
   ws-opts:
     path: /linkvws
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  server: 34.96.188.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  tls: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -89,14 +106,14 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  server: 47.240.80.220
-  port: 2052
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  server: 185.244.208.69
+  port: 443
   udp: true
   type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
-  skip-cert-verify: true
+  password: UX82473651
+  sni: strong-haddock.rooster465.autos
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +130,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +147,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
 rules:
 - MATCH,PROXIES

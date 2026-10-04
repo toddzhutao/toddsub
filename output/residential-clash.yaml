@@ -4,58 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 57.129.130.200
-  port: 52014
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 172.64.32.108
+  port: 8880
   udp: true
   type: vless
-  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: tutaim.azad0namah.ir
-  port: 8080
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  server: 172.64.53.55
+  port: 80
   udp: true
   type: vless
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  sni: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  server: 69.63.221.116
-  port: 25517
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    path: /
     headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: argo6.5671234.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
@@ -73,22 +45,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

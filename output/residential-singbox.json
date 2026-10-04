@@ -5,80 +5,36 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "57.129.130.200",
-      "server_port": 52014,
-      "uuid": "c8b0617e-010f-43a8-b3d0-d5358febf0c9",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+      "server": "172.64.32.108",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-      "server": "tutaim.azad0namah.ir",
-      "server_port": 8080,
-      "uuid": "fdc1206a-9d2e-42b7-b615-9ccea8cf70ee"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-      "server": "12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "2c01eae6-0b6a-11ee-a058-f23c91369f2d",
-      "tls": {
-        "enabled": true,
-        "server_name": "12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽) - xiaohe",
-      "server": "69.63.221.116",
-      "server_port": 25517,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+      "server": "172.64.53.55",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==",
+        "path": "/",
         "headers": {
-          "Host": "wzs.echo.net.eu.org"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe",
-      "server": "argo6.5671234.xyz",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "172.66.152.4",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
@@ -99,24 +55,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
