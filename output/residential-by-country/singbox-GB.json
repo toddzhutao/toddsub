@@ -5,21 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "35.199.90.53",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe",
+      "server": "162.159.152.4",
       "server_port": 443,
-      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
-          "short_id": "b62a4da6cd1c4dd6"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
         }
       }
     },
@@ -28,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
