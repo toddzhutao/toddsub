@@ -16,21 +16,8 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: randomized
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 157.228.155.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.59.210.37
   port: 443
   udp: true
@@ -45,7 +32,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.59.210.32
   port: 443
   udp: true
@@ -56,11 +43,11 @@ proxies:
     public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
     short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -69,32 +56,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 84.22.150.39
-  port: 7443
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 157.228.155.185
+  port: 443
   udp: true
   type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: zordbx861.233874.xyz
-  port: 8888
-  udp: true
-  type: vless
-  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+    short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
@@ -107,8 +79,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,7 +89,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 rules:
 - MATCH,PROXIES

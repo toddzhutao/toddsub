@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.66.47.45
-  port: 2083
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: wk1.f1w.de5.net
+  servername: fujrdt.d6f54hd1j.cc
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: wk1.f1w.de5.net
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
