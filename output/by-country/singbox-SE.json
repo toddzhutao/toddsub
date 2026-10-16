@@ -6,6 +6,83 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "88.216.223.66",
+      "server_port": 443,
+      "uuid": "244d9eab-3311-40c7-b47f-4968dc3088a6",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcpswed1.figurapn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "mui.firzav.ir",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "hy-se.bypassme.online",
+      "server_port": 443,
+      "password": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy-se.bypassme.online",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "edge-lab-b.10media.top",
+      "server_port": 443,
+      "uuid": "9cb8d71c-fe06-4402-a591-eaa1f173b890",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge-lab-b.10media.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "swedenfeed"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "swe.wizard.select",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
       "server": "se1.h1cloud.net",
       "server_port": 26128,
       "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
@@ -28,46 +105,16 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "hy-se.bypassme.online",
-      "server_port": 443,
-      "password": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy-se.bypassme.online",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "swe.wizard.select",
-      "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ]
     },
     {
@@ -76,7 +123,10 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
