@@ -11,18 +11,11 @@ proxies:
   type: vless
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 77.232.135.141
-  port: 8445
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: site.teslamotor.site
   port: 20001
