@@ -28,19 +28,16 @@ proxies:
     headers:
       Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se13-node.rumedia-cdn.com
-  port: 2096
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st5ff8a.rumedia-cdn.com
-  skip-cert-verify: false
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /vless
     headers:
-      Host: st5ff8a.rumedia-cdn.com
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
