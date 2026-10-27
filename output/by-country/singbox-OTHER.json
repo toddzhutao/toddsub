@@ -4,15 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
-      "server": "130.94.53.51",
-      "server_port": 15656,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
+        "server_name": "www.windowsmsidownloads.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
       }
     },
     {
@@ -20,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
