@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -28,6 +28,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 139.84.132.62
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: 139.84.132.62
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: in002.zestapp778.com
   port: 46362
   udp: true
@@ -36,14 +44,6 @@ proxies:
   tls: true
   servername: in002.zestapp778.com
   skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 139.84.132.62
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
