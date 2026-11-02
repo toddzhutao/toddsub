@@ -17,16 +17,15 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 13.140.56.100
-  port: 14430
+  server: in002.zestapp778.com
+  port: 42733
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -36,7 +35,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 122.176.216.52
   port: 443
