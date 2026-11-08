@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
-      "server": "64.176.7.205",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
-        "insecure": false
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "120.48.133.162",
+      "server_port": 10086,
+      "uuid": "2a489513-46b5-488c-9899-9faaf2d83cd9",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
