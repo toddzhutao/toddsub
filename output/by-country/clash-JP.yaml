@@ -36,22 +36,20 @@ proxies:
   sni: 138.3.208.26
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 104.21.0.1
-  port: 2083
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 13.140.248.125
   port: 443
   udp: true
@@ -66,8 +64,8 @@ proxies:
     path: /e3e2aa65089989f0
     headers:
       Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 104.19.33.25
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 104.16.10.72
   port: 443
   udp: true
   type: vless
@@ -75,25 +73,12 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,7 +92,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - xiaohe
   - 🇯🇵 日本 (Japan) 07 - xiaohe
   - 🇯🇵 日本 (Japan) 08 - xiaohe
-  - 🇯🇵 日本 (Japan) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,6 +105,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - xiaohe
   - 🇯🇵 日本 (Japan) 07 - xiaohe
   - 🇯🇵 日本 (Japan) 08 - xiaohe
-  - 🇯🇵 日本 (Japan) 09 - xiaohe
 rules:
 - MATCH,PROXIES
