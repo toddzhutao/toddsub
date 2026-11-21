@@ -14,46 +14,14 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "162.159.160.117",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "144.31.28.228",
-      "server_port": 2096,
-      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
-      "tls": {
-        "enabled": true,
-        "server_name": "ste87ea.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "cdn/v3/live",
-        "headers": {
-          "Host": "ste87ea.rumedia-cdn.com"
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -63,8 +31,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
@@ -72,8 +39,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
